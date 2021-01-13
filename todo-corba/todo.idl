@@ -1,0 +1,15 @@
+module TodoList {
+    struct Todo {
+        string id;
+        string name;
+    };
+
+    typedef sequence<Todo> TodoSequence;
+
+    interface TodoService {
+        string createTodo(in Todo t);
+        void deleteTodo(in string id);
+        Todo getTodo(in string id);
+        TodoSequence getTodos();
+    };
+};

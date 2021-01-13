@@ -1,0 +1,10 @@
+* { box-sizing: border-box }
+
+.todo-item { border: none; border-bottom: solid 1px #aaa; padding: 10px;
+             display: block; width: 100%; }
+
+body { font-family: sans-serif; }
+
+h1 { text-align: center; margin: 0; }
+
+#todo-list { max-width: 300px; margin: 0 auto; }

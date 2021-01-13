@@ -1,0 +1,3 @@
+export OMNIORB_CONFIG=$PWD/sample.cfg
+mkdir -p var
+export OMNINAMES_DATADIR=$PWD/var
