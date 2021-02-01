@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import CORBA, TodoList, TodoList__POA, CosNaming, sys, uuid
 
 class TodoService(TodoList__POA.TodoService):

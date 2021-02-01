@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import http.client
 import json
 import unittest

@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import CORBA
 import TodoList, TodoList__POA, CosNaming
 import sys
