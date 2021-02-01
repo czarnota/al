@@ -32,13 +32,13 @@ class Todo {
             let id = event.target.dataset["id"];
 
             if (event.target.value) {
-                await fetch(API + "/todos/edit/" + id, {
-                    method: 'POST',
+                await fetch(API + "/todos/" + id, {
+                    method: 'PUT',
                     body: JSON.stringify({name: event.target.value}),
                     headers: { 'Content-Type': 'application/json' },
                 })
             } else {
-                await fetch(API + "/todos/delete/" + id, { method: 'POST' })
+                await fetch(API + "/todos/" + id, { method: 'DELETE' })
             }
 
             await this.refresh();
@@ -46,7 +46,7 @@ class Todo {
         }
 
         if (event.target.value) {
-            await fetch(API + "/todos/create", {
+            await fetch(API + "/todos/", {
                 method: 'POST',
                 body: JSON.stringify({name: event.target.value}),
                 headers: { 'Content-Type': 'application/json' },
